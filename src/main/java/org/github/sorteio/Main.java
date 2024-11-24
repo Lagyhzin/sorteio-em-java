@@ -10,17 +10,16 @@ public class Main {
 
         boolean awardGift = true;
         while (awardGift) {
-            System.out.println("GIFTAWAY");
-            System.out.println("");
+            System.out.println("GIFTAWAY\n");
             System.out.println("Bem-Vindo ao sistema de Sorteios!");
             System.out.println("Digite um número de acordo com o sistema que você quer fazer");
-            System.out.println("\n1 - Faça um sorteio de números exemplo: Até qual número você quer? 100, irá sortear de 0 a 100\n2 - Sorteio nomes coloque com um espaço para diferenciar cada nome diferente.\n3 - Encerrar o Programa\n");
+            System.out.println("\n1 - Faça um sorteio de números\n2 - Faça um sorteio de nomes\n3 - Encerrar o Programa\n");
 
             System.out.print("Digite o número da operação que deseja (1/2/3): \n");
             int number = scanner.nextInt();
 
             if (number == 1) {
-                System.out.println("\nDigite até qual número deseja: ");
+                System.out.println("\nDigite até qual número deseja (EX: 100, irá sortear de 0 a 100): ");
                 int random = scanner.nextInt();
 
                 int numberWinner = randomGenerator.nextInt(random);
